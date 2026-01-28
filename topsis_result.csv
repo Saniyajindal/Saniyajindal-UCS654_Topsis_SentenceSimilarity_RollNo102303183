@@ -9,3 +9,4 @@ After applying the TOPSIS algorithm with weights **1,1,1,1** and impacts **+,-,-
 | all-mpnet-base-v2 | 0.616 | 3 |
 | all-MiniLM-L6-v2 | 0.525 | 4 |
 | stsb-roberta-large | 0.367 | 5 |
+|
