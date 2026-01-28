@@ -67,13 +67,14 @@ The raw data collected for the models is as follows:
 
 After applying the TOPSIS algorithm with weights **1,1,1,1** and impacts **+,-,-,+**, the final rankings are:
 
-| Model | Topsis Score | Rank |
-|-------|--------------|------|
-| sentence-t5-base | Highest | 1 |
-| all-MiniLM-L6-v2 | — | 2 |
-| paraphrase-MiniLM-L6-v2 | — | 3 |
-| all-mpnet-base-v2 | — | 4 |
-| stsb-roberta-large | — | 5 |
+| Model | Avg Similarity | Inference Time (ms) | Model Size (MB) | Embedding Dimension | Topsis Score | Rank |
+|-------|----------------|---------------------|-----------------|---------------------|--------------|------|
+| paraphrase-MiniLM-L6-v2 | 0.531 | 111.59 | 22.71 | 384 | 0.694 | 1 |
+| sentence-t5-base | 0.854 | 493.69 | 110.21 | 768 | 0.651 | 2 |
+| all-mpnet-base-v2 | 0.525 | 454.74 | 109.48 | 768 | 0.616 | 3 |
+| all-MiniLM-L6-v2 | 0.571 | 847.04 | 22.71 | 384 | 0.525 | 4 |
+| stsb-roberta-large | 0.438 | 415.42 | 355.35 | 1024 | 0.367 | 5 |
+
 
 ---
 
