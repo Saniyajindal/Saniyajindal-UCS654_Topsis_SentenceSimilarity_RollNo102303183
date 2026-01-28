@@ -1,6 +1,11 @@
-Model,Avg Similarity,Inference Time (ms),Model Size (MB),Embedding Dimension,Topsis Score,Rank
-all-MiniLM-L6-v2,0.5713527575135231,847.0404148101807,22.713216,384,0.5249957852182952,4
-all-mpnet-base-v2,0.5247598685324192,454.7498226165772,109.486464,768,0.616536267020397,3
-paraphrase-MiniLM-L6-v2,0.5311229787766933,111.59086227416992,22.713216,384,0.6943552043690595,1
-sentence-t5-base,0.8535551428794861,493.6981201171875,110.218368,768,0.6512972103828166,2
-stsb-roberta-large,0.4375650447793305,415.4238700866699,355.359744,1024,0.3667071210699608,5
+## Results (`topsis_result.csv`)
+
+After applying the TOPSIS algorithm with weights **1,1,1,1** and impacts **+,-,-,+**, the final rankings are:
+
+| Model | Topsis Score | Rank |
+|-------|--------------|------|
+| paraphrase-MiniLM-L6-v2 | 0.694 | 1 |
+| sentence-t5-base | 0.651 | 2 |
+| all-mpnet-base-v2 | 0.616 | 3 |
+| all-MiniLM-L6-v2 | 0.525 | 4 |
+| stsb-roberta-large | 0.367 | 5 |
