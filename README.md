@@ -92,15 +92,29 @@ To replicate this analysis, follow these steps:
 ### 1. Install Requirements
 
 
+
+
+Ensure you have the necessary libraries installed:
+
+```
+pip install pandas matplotlib
+```
+
 ### 2. Install TOPSIS Package
 
 Install the custom TOPSIS package developed for this project:
 
+```
+pip install Topsis-Saniya-102303183
+```
 
 ### 3. Run the Analysis
 
 Use the command line interface to rank the models:
 
+```
+topsis sentence_similarity_models.csv "1,1,1,1" "+,-,-,+" topsis_result.csv
+```
 
 ---
 
